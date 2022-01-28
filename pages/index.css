@@ -1,8 +1,6 @@
 /* NORMALIZE */
 @import url('../vendor/normalize.css');
-
 /* @import url('../'); */
-
 /* FONTS */
 @font-face {
   font-family: 'Inter';
@@ -12,7 +10,6 @@
   src: url('../vendor/fonts/inter-web/Inter-Regular.woff?v=3.19') format('woff2'),
     url('../vendor/fonts/inter-web/Inter-Regular.woff?v=3.19') format('woff');
 }
-
 @font-face {
   font-family: 'Inter';
   font-style: normal;
@@ -21,7 +18,6 @@
   src: url('../vendor/fonts/inter-web/Inter-Bold.woff2?v=3.19') format('woff2'),
     url('../vendor/fonts/inter-web/Inter-Bold.woff?v=3.19') format('woff');
 }
-
 @font-face {
   font-family: 'Inter';
   font-style: normal;
@@ -38,9 +34,281 @@
   text-rendering: optimizeLegibility;
   color: #fff;
 }
+
 /* PAGE */
 .page {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+
+/* HEADER  */
+.header {
+}
+
+.header__logo {
+  background-image: url('../images/russia-logo.svg');
+  width: 176px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.header__lang-links {
+  /* ul */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__lang-link {
+  /* a */
+  color: #fff;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: right;
+}
+
+.header__lang-link_active {
+  text-decoration: underline;
+}
+
+/* LEAD  */
+.lead {
+}
+
+.lead__title {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.lead__subtitle {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.lead__caption {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.lead__image {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.lead__image-overlay {
+  background-image: url('../images/railway.svg');
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100vw;
+  height: 262.99px;
+}
+
+/* INTRO  */
+.intro {
+}
+
+.intro__title {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 1.07;
+}
+
+.intro__text {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.intro__list {
+  margin: 0;
+  padding: 0;
+}
+
+.intro__list-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.intro__span-accent {
+  font-weight: normal;
+}
+
+/* PHOTO-GRID  */
+.photo-grid {
+}
+
+.photo-grid__items {
+  /* ul */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.photo-grid__item {
+  margin: 0;
+  padding: 0;
+}
+
+/* PLACE  */
+.place {
+}
+
+.places {
+}
+
+.place__title {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06;
+}
+
+.place__image {
+}
+
+.place__website {
+  margin: 0;
+  padding: 0;
+}
+
+.place__url-heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.place__link {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.22;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.place__paragraph {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.63;
+}
+
+/* COVER  */
+.cover {
+  position: relative;
+}
+
+.cover__title {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.cover__subtitle {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  z-index: 1;
+}
+
+.cover__overlay {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background: #2a2c2f;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+
+.cover__background {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 740px;
+  background-image: url('../images/train-depot.jpg');
+  background-repeat: no-repeat;
+}
+
+/* FOOTER  */
+.footer {
+}
+
+.footer__links {
+  /* ul */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__link {
+  /* a */
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.12;
+}
+
+.footer__copyright {
+  margin: 0;
+  padding: 0;
 }
