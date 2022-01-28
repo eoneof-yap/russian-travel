@@ -1,4 +1,46 @@
 /* NORMALIZE */
 @import url('../vendor/normalize.css');
 
-@import url('../');
+/* @import url('../'); */
+
+/* FONTS */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../vendor/fonts/inter-web/Inter-Regular.woff?v=3.19') format('woff2'),
+    url('../vendor/fonts/inter-web/Inter-Regular.woff?v=3.19') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../vendor/fonts/inter-web/Inter-Bold.woff2?v=3.19') format('woff2'),
+    url('../vendor/fonts/inter-web/Inter-Bold.woff?v=3.19') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../vendor/fonts/inter-web/Inter-Black.woff2?v=3.19') format('woff2'),
+    url('../vendor/fonts/inter-web/Inter-Black.woff?v=3.19') format('woff');
+}
+
+/* ROOT */
+.root {
+  background-color: #2a2c2f;
+  font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #fff;
+}
+/* PAGE */
+.page {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
