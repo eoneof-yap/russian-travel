@@ -6,5 +6,5 @@
   font-size: 96px;
   line-height: 1.04;
   text-align: center;
-  max-width: calc(100% - 264px); /* 720 */ 
+  max-width: 720px; /* 720 */ 
 }

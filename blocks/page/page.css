@@ -1,9 +1,23 @@
 ﻿.page {
   margin: 0 auto;
+  padding: 0 48px;
+  box-sizing: border-box;
   max-width: 1280px;
 }
 
-/* @media (max-with: 1024px) {
+/* @media all and (max-width: 1024px) {
   .page {
   }
 } */
+
+@media all and (max-width: 768px) {
+  .page {
+    padding: 0 24px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .page {
+    padding: 0 16px;
+  }
+}

@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  max-width: calc(100% - 96px);
+  max-width: 1184px;
 }
 
 /* @media (max-with: 1280px) {

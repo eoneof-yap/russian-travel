@@ -27,51 +27,12 @@
 @import url('../blocks/lead/__caption/lead__caption.css');
 
 /* INTRO  */
-.intro {
-  margin: 0 auto;
-  padding: 92px 0 0 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  max-width: calc(100% - 296px); /* 984 */
-}
-
-.intro__title {
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 54px;
-  line-height: 1.07;
-}
-
-.intro__text {
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.63;
-}
-
-.intro__list {
-  margin: 0;
-  padding: 0;
-}
-
-.intro__list-item {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 1.5;
-}
-
-.intro__span-accent {
-  font-weight: normal;
-}
+@import url('../blocks/intro/intro.css');
+@import url('../blocks/intro/__title/intro__title.css');
+@import url('../blocks/intro/__text/intro__text.css');
+@import url('../blocks/intro/__list/intro__list.css');
+@import url('../blocks/intro/__list-item/intro__list-item.css');
+@import url('../blocks/intro/__span-accent/intro__span-accent.css');
 
 /* PHOTO-GRID  */
 .photo-grid {
@@ -224,9 +185,9 @@
   padding: 0;
 }
 
-/* * {
+* {
   outline: 1px solid yellow;
-} */
+}
 
 /* FONTS */
 @font-face {
