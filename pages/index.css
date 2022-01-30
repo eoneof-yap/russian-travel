@@ -12,67 +12,27 @@
 @import url('../blocks/header/header.css');
 @import url('../blocks/header/__logo/header__logo.css');
 @import url('../blocks/header/__lang-links/header__lang-links.css');
-@import url('../blocks/header/__lang-link/header__lang-link.css');
 @import url('../blocks/header/__lang-item/header__lang-item.css');
+@import url('../blocks/header/__lang-link/header__lang-link.css');
+@import url('../blocks/header/__lang-link/_active/header__lang-link_active.css');
 
 /* NAV */
 @import url('../blocks/nav/nav.css');
 
 /* LEAD  */
-.lead {
-}
+@import url('../blocks/lead/lead.css');
+@import url('../blocks/lead/__title/lead__title.css');
+@import url('../blocks/lead/__subtitle/lead__subtitle.css');
+@import url('../blocks/lead/__image/lead__image.css');
+@import url('../blocks/lead/__image-foreground/lead__image-foreground.css');
+@import url('../blocks/lead/__image-background/lead__image-background.css');
+@import url('../blocks/lead/__caption/lead__caption.css');
 
-.lead__title {
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 96px;
-  line-height: 1.04;
-  text-align: center;
-}
-
-.lead__subtitle {
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 1.2;
-  text-align: center;
-}
-
-.lead__caption {
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 1.4;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-}
-
-.lead__image {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  position: relative;
-}
-
-.lead__image-overlay {
-  background-image: url('../images/railway.svg');
-  background-repeat: no-repeat;
-  object-fit: cover;
-  width: 100%;
-  height: 262.99px;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-}
 
 /* INTRO  */
 .intro {
+  display: flex;
+  flex-direction: column;
 }
 
 .intro__title {
@@ -129,10 +89,12 @@
 }
 
 /* PLACE  */
-.place {
-}
 
 .places {
+  display: flex;
+  flex-direction: column;
+}
+.place {
 }
 
 .place__title {
@@ -261,9 +223,9 @@
   padding: 0;
 }
 
-* {
+/* * {
   outline: 1px solid yellow;
-}
+} */
 
 /* FONTS */
 @font-face {
