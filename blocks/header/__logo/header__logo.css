@@ -1,1 +1,9 @@
-﻿
+﻿.header__logo {
+  background-image: url('../../../images/russia-logo.svg');
+  min-width: 176px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}

@@ -1,82 +1,22 @@
 /* NORMALIZE */
 @import url('../vendor/normalize.css');
 /* @import url('../'); */
-/* FONTS */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('../vendor/fonts/inter-web/Inter-Regular.woff?v=3.19') format('woff2'),
-    url('../vendor/fonts/inter-web/Inter-Regular.woff?v=3.19') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('../vendor/fonts/inter-web/Inter-Bold.woff2?v=3.19') format('woff2'),
-    url('../vendor/fonts/inter-web/Inter-Bold.woff?v=3.19') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url('../vendor/fonts/inter-web/Inter-Black.woff2?v=3.19') format('woff2'),
-    url('../vendor/fonts/inter-web/Inter-Black.woff?v=3.19') format('woff');
-}
 
 /* ROOT */
-.root {
-  background-color: #2a2c2f;
-  font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
-  text-rendering: optimizeLegibility;
-  color: #fff;
-}
+@import url('../blocks/root/root.css');
 
 /* PAGE */
-.page {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
+@import url('../blocks/page/page.css');
 
 /* HEADER  */
-.header {
-}
+@import url('../blocks/header/header.css');
+@import url('../blocks/header/__logo/header__logo.css');
+@import url('../blocks/header/__lang-links/header__lang-links.css');
+@import url('../blocks/header/__lang-link/header__lang-link.css');
+@import url('../blocks/header/__lang-item/header__lang-item.css');
 
-.header__logo {
-  background-image: url('../images/russia-logo.svg');
-  width: 176px;
-  height: 52px;
-  margin: 0;
-  padding: 0;
-  background-repeat: no-repeat;
-  object-fit: cover;
-}
-
-.header__lang-links {
-  /* ul */
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header__lang-link {
-  /* a */
-  color: #fff;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 1.17;
-  text-align: right;
-}
-
-.header__lang-link_active {
-  text-decoration: underline;
-}
+/* NAV */
+@import url('../blocks/nav/nav.css');
 
 /* LEAD  */
 .lead {
@@ -88,7 +28,7 @@
   font-style: normal;
   font-weight: 900;
   font-size: 96px;
-  line-height: 100px;
+  line-height: 1.04;
   text-align: center;
 }
 
@@ -116,15 +56,19 @@
 .lead__image {
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
+  position: relative;
 }
 
 .lead__image-overlay {
   background-image: url('../images/railway.svg');
   background-repeat: no-repeat;
   object-fit: cover;
-  width: 100vw;
+  width: 100%;
   height: 262.99px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
 }
 
 /* INTRO  */
@@ -279,7 +223,8 @@
 .cover__background {
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
+  /* TODO тут чтото- не так с высотой */
   height: 740px;
   background-image: url('../images/train-depot.jpg');
   background-repeat: no-repeat;
@@ -287,6 +232,8 @@
 
 /* FOOTER  */
 .footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__links {
@@ -294,6 +241,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 
 .footer__link {
@@ -311,4 +259,34 @@
 .footer__copyright {
   margin: 0;
   padding: 0;
+}
+
+* {
+  outline: 1px solid yellow;
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../vendor/fonts/inter-web/Inter-Regular.woff?v=3.19') format('woff2'),
+    url('../vendor/fonts/inter-web/Inter-Regular.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../vendor/fonts/inter-web/Inter-Bold.woff2?v=3.19') format('woff2'),
+    url('../vendor/fonts/inter-web/Inter-Bold.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../vendor/fonts/inter-web/Inter-Black.woff2?v=3.19') format('woff2'),
+    url('../vendor/fonts/inter-web/Inter-Black.woff?v=3.19') format('woff');
 }

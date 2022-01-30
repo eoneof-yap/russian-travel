@@ -1,1 +1,14 @@
-﻿
+﻿.header {
+  margin: 0 auto;
+  padding: 28px 0 0 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: calc(100% - 96px);
+}
+
+/* @media (max-with: 1280px) {
+  .header {
+  }
+} */
