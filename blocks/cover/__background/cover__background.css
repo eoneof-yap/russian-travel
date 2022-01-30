@@ -1,1 +1,11 @@
-﻿
+﻿.cover__background {
+  margin: 0;
+  /* padding: 0; */
+  padding-top: calc((5 / 8) * 100%);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../images/train-depot.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
