@@ -24,15 +24,16 @@
 @import url('../blocks/lead/__title/lead__title.css');
 @import url('../blocks/lead/__subtitle/lead__subtitle.css');
 @import url('../blocks/lead/__image/lead__image.css');
-@import url('../blocks/lead/__image-foreground/lead__image-foreground.css');
-@import url('../blocks/lead/__image-background/lead__image-background.css');
 @import url('../blocks/lead/__caption/lead__caption.css');
-
 
 /* INTRO  */
 .intro {
+  margin: 0 auto;
+  padding: 92px 0 0 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  max-width: calc(100% - 296px); /* 984 */
 }
 
 .intro__title {
