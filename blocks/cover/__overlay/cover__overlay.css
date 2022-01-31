@@ -1,17 +1,9 @@
 ﻿.cover__overlay {
-  margin: 0;
-  padding: 0;
+  display: block;
   cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #2a2c2f;
-  opacity: 0.3;
-  transition: opacity cubic-bezier(0, 0.1, 0.4, 1) 1s;
-}
-
-.cover__overlay:hover {
-  opacity: 0.8;
 }

@@ -5,5 +5,5 @@
   display: flex;
   flex-direction: column;
   justify-items: space-between;
-  max-width: 984px; /* 984 */
+  max-width: 984px;
 }
