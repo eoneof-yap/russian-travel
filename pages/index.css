@@ -66,6 +66,6 @@
 @import url('../blocks/footer/__copyright/footer__copyright.css');
 
 /* OUTLINE */
-/* * {
+* {
   outline: 1px solid pink;
-} */
+}

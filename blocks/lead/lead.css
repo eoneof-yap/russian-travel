@@ -4,6 +4,25 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-items: space-between;
   max-width: 984px;
+}
+
+@media all and (max-width: 1024px) {
+  .lead {
+    padding: 49px 0 46px 0;
+  }
+}
+
+/* @media all and (max-width: 768px) {
+  .asdasdasd {
+    
+  }
+}
+*/
+
+@media all and (max-width: 320px) {
+  .lead {
+    padding: 27px 0 46px 0;
+    max-width: ;
+  }
 }

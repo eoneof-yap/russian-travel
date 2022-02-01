@@ -1,14 +1,26 @@
 ﻿.header {
   margin: 0 auto;
-  padding: 28px 0 0 0;
+  padding: 28px 48px 0;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  max-width: 1184px;
+  max-width: 1280px;
 }
 
-/* @media (max-with: 1280px) {
+/* @media all and (max-width: 1024px) {
   .header {
   }
 } */
+
+@media all and (max-width: 768px) {
+  .header {
+  padding-bottom: 24px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .header {
+  padding-bottom: 16px;
+  }
+}

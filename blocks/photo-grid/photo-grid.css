@@ -3,5 +3,24 @@
   padding: 46px 0;
   max-width: 1280px;
   display: flex;
-  font-display: column;
+  flex-direction: column;
 }
+
+@media all and (max-width: 1024px) {
+  .photo-grid {
+  max-width: 1024px;
+   
+  }
+}
+
+/* @media all and (max-width: 768px) {
+  .asdasdasd {
+    
+  }
+}
+
+@media all and (max-width: 320px) {
+  .asdasdasd {
+    
+  }
+} */
