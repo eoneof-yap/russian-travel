@@ -1,7 +1,108 @@
 ﻿.cover {
-  margin: 0 auto;
-  padding: 46px 0 46px 0;
+  padding: 34px 0 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .cover {
+  padding-bottom: 44px;
+    
+  }
+  }
+
+.cover__wrapper {
+}
+.cover__background {
+  background-image: url('../../../images/cover-trains.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-width: 320px;
+  padding-bottom: calc((5 / 8) * 100%);
   box-sizing: border-box;
   position: relative;
-  max-width: 1184px;
+}
+.cover__background:before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2a2c2f;
+  opacity: 0.3;
+  transition: opacity cubic-bezier(0, 0.1, 0.4, 1) 1s;
+}
+.cover__background:hover:before {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.cover__title {
+  margin: 0;
+  padding: 0;
+  min-width: 288px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.09;
+  text-align: center;
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media screen and (min-width: 375px) {
+  .cover__title {
+    top: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cover__title {
+    top: 115px;
+    font-size: 72px;
+    line-height: 1.06;
+  }
+}
+
+.cover__subtitle {
+  margin: 0;
+  padding: 0;
+  min-width: 288px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  position: absolute;
+  top: 121px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media screen and (min-width: 375px) {
+  .cover__subtitle {
+    top: 135px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cover__subtitle {
+    top: 299px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+.cover__overlay {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
