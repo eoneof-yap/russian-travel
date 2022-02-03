@@ -7,13 +7,16 @@
 
 @media screen and (min-width: 768px) {
   .cover {
-  padding-bottom: 44px;
-    
+    padding-bottom: 44px;
   }
-  }
-
-.cover__wrapper {
 }
+@media screen and (min-width: 1024px) {
+  .cover {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+}
+
 .cover__background {
   background-image: url('../../../images/cover-trains.jpg');
   background-size: cover;
@@ -64,6 +67,13 @@
 @media screen and (min-width: 768px) {
   .cover__title {
     top: 115px;
+    font-size: 72px;
+    line-height: 1.06;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cover__title {
+    top: 195px;
     font-size: 72px;
     line-height: 1.06;
   }
