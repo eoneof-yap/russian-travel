@@ -1,4 +1,9 @@
 ﻿.header__lang-link_active {
   text-decoration: underline;
   text-underline-offset: 3px;
+  opacity: 1;
+}
+.header__lang-link_active:hover {
+  opacity: 1;
+  cursor: default;
 }

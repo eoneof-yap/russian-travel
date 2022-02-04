@@ -1,15 +1,13 @@
 ﻿.cover__background {
-  margin: 0 auto;
-  padding: 247px 0 245px;
-  background-image: url('../../../images/train-depot.jpg');
+  background-image: url('../../../images/cover-trains.jpg');
   background-size: cover;
-  max-width: 1184px;
-  max-height: 740px;
-  box-sizing: border-box;
+  background-position: top center;
   background-repeat: no-repeat;
+  min-width: 320px;
+  padding-bottom: calc((5 / 8) * 100%);
+  box-sizing: border-box;
   position: relative;
 }
-
 .cover__background:before {
   width: 100%;
   height: 100%;
@@ -22,10 +20,15 @@
   opacity: 0.3;
   transition: opacity cubic-bezier(0, 0.1, 0.4, 1) 1s;
 }
-
 .cover__background:hover:before {
   opacity: 0.8;
   cursor: pointer;
 }
-
-/* padding-top: calc((5 / 8) * 100%); */
+@media screen and (min-width: 1280px) {
+  .cover__background {
+    width: 1184px;
+    align-self: center;
+    max-width: 1184px;
+    padding-bottom: calc((5 / 8) * 100%);
+  }
+}

@@ -1,9 +1,13 @@
 ﻿.header__logo {
-  background-image: url('../../../images/russia-logo.svg');
-  min-width: 176px;
-  height: 52px;
-  margin: 0;
-  padding: 0;
+  background-image: url('../../../images/header-logo.svg');
+  background-size: contain;
   background-repeat: no-repeat;
-  object-fit: cover;
+  min-width: 142px;
+  min-height: 42px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    min-width: 176px;
+    min-height: 52px;
+  }
 }

@@ -1,9 +1,29 @@
 ﻿.place__title {
-  margin: 0 0 48px 0;
+  margin: 0 0 32px 16px;
   padding: 0;
+  min-width: 288px;
+  font-family: Inter;
   font-style: normal;
   font-weight: 900;
-  font-size: 72px;
-  line-height: 1.05;
-  max-width: 460px;
+  font-size: 10vw;
+  line-height: 1.09;
+  white-space: break-spaces;
+}
+@media screen and (min-width: 768px) {
+  .place__title {
+    margin: 0 16px 0 0;
+    max-width: 340px;
+    font-size: 5.468vw;
+    line-height: 1.1;
+    grid-template-columns: 1fr;
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .place__title {
+    margin: 0 29px 0 0;
+    max-width: 440px;
+    font-size: 72px;
+    line-height: 1.06;
+  }
 }

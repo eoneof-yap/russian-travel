@@ -1,16 +1,16 @@
 ﻿.place__link {
   margin: 0;
   padding: 0;
+  font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 1.22;
+  line-height: 22px;
   text-decoration: underline;
   text-underline-offset: 3px;
   color: #fff;
   transition: opacity cubic-bezier(0, 0.1, 0.4, 1) 0.5s;
 }
-
 .place__link:hover {
   opacity: 0.8;
 }

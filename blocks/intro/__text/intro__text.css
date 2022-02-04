@@ -1,9 +1,28 @@
 ﻿.intro__text {
-  margin: 0 0 33px 0;
+  margin: 0 0 34px;
   padding: 0;
+  align-self: flex-start;
+  min-width: 288px;
+  font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.63;
-  max-width: 690px;
+  line-height: 1.625;
+}
+@media screen and (min-width: 768px) {
+  .intro__text {
+    margin: 0 0 33px;
+    min-width: 720px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .intro__text {
+    /* margin-left: 48px; */
+    max-width: 690px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .intro__text {
+    /* margin-left: 148px; */
+  }
 }

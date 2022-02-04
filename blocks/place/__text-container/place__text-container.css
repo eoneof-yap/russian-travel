@@ -1,0 +1,14 @@
+﻿.place__text-container {
+  margin: 0 16px 50px 16px;
+  padding: 0;
+  min-width: 288px;
+}
+@media screen and (min-width: 768px) {
+  .place__text-container {
+    margin: 0;
+    min-width: 352px;
+  }
+}
+.place__text-container:last-of-type {
+  margin-bottom: 0;
+}
