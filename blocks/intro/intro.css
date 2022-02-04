@@ -1,7 +1,12 @@
 ﻿.intro {
+  margin: 0 auto;
   padding: 32px 0 32px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  min-width: 320px;
+  max-width: 984px;
 }
 @media screen and (min-width: 768px) {
   .intro {
@@ -15,9 +20,17 @@
     padding-bottom: 46px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .intro {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+}
 .intro__title {
-  margin: 0 16px 40px;
+  margin: 0 0 40px;
   padding: 0;
+  align-self: flex-start;
+  max-width: 984px;
   min-width: 288px;
   font-family: Inter;
   font-style: normal;
@@ -27,55 +40,71 @@
 }
 @media screen and (min-width: 768px) {
   .intro__title {
+    /* margin: 0; */
     font-size: 54px;
     line-height: 1.07;
-    max-width: 720px;
-    margin-left: 24px;
+    width: 720px;
   }
 }
 @media screen and (min-width: 1024px) {
   .intro__title {
-    margin-left: 48px;
+    /* margin-left: 48px; */
+  }
+}
+@media screen and (min-width: 1280px) {
+  .intro__title {
+    /* margin-left: 148px; */
   }
 }
 .intro__text {
-  margin: 0 16px 34px;
+  margin: 0 0 34px;
   padding: 0;
+  align-self: flex-start;
   min-width: 288px;
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.63;
+  line-height: 1.625;
 }
-
 @media screen and (min-width: 768px) {
   .intro__text {
-    margin: 0 24px 33px;
+    margin: 0 0 33px;
     min-width: 720px;
   }
 }
 @media screen and (min-width: 1024px) {
   .intro__text {
-    margin-left: 48px;
+    /* margin-left: 48px; */
     max-width: 690px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .intro__text {
+    /* margin-left: 148px; */
   }
 }
 .intro__list {
   /* ul */
   list-style: none;
-  margin: 0 16px;
+  margin: 0;
   padding: 0;
   min-width: 288px;
+  align-self: flex-start;
 }
 @media screen and (min-width: 768px) {
   .intro__list {
-    margin: 0 24px;
+    /* margin: 0 24px; */
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .intro__list {
-    margin-left: 48px;
+    /* margin-left: 48px; */
+  }
+}
+@media screen and (min-width: 1280px) {
+  .intro__list {
+    /* margin-left: 148px; */
   }
 }
 .intro__list-item {
