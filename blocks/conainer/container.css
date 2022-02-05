@@ -16,7 +16,7 @@
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: 28px;
-    max-width: 928;
+    max-width: 928px;
   }
 }
 @media screen and (min-width: 1280px) {
