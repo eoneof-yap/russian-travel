@@ -4,6 +4,7 @@
   opacity: 1;
 }
 .header__lang-link_active:hover {
+  /* в активном состоянии не может быть ссылкой, поэтому эффект наведения отключен */
   opacity: 1;
   cursor: default;
 }
