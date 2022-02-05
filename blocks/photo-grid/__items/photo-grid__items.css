@@ -8,7 +8,7 @@
   .photo-grid__items {
     margin: 0 24px;
     grid-template-columns: repeat(2, auto);
-    gap: 16px
+    gap: 16px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -21,7 +21,7 @@
     margin: 0 48px;
     grid-template-columns: repeat(3, auto);
     min-width: 928px;
-    gap: 14px
+    gap: 14px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -29,6 +29,6 @@
     margin: 0 48px;
     grid-template-columns: repeat(4, auto);
     min-width: 1184px;
-    gap: 16px
+    gap: 16px;
   }
 }

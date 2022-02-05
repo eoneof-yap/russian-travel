@@ -4,27 +4,15 @@
   align-self: flex-start;
   max-width: 984px;
   min-width: 288px;
-  font-family: Inter;
-  font-style: normal;
+  text-rendering: optimizeLegibility;
   font-weight: 900;
   font-size: 10vw;
   line-height: 1.09;
 }
 @media screen and (min-width: 768px) {
   .intro__title {
-    /* margin: 0; */
     font-size: 54px;
     line-height: 1.07;
     width: 720px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .intro__title {
-    /* margin-left: 48px; */
-  }
-}
-@media screen and (min-width: 1280px) {
-  .intro__title {
-    /* margin-left: 148px; */
   }
 }

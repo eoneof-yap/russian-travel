@@ -2,12 +2,10 @@
   margin: 0;
   margin-left: 16px;
   margin-right: 16px;
-  /* padding: 0 16px; */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: start;
-  /* max-width: 984px; */
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -18,14 +16,11 @@
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: 28px;
-    /* margin-right: 48px; */
     max-width: 928;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
-    /* margin-left: 148px; */
     margin: 0;
-    /* margin-right: 148px; */
   }
 }
