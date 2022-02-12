@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   min-width: 288px;
+  max-width: 360px;
   text-rendering: optimizeLegibility;
   font-weight: normal;
   font-size: 14px;
@@ -17,18 +18,15 @@
     top: 62.291%;
     font-size: 18px;
     line-height: 1.22;
-    width: 360px;
   }
 }
 @media screen and (min-width: 1024px) {
   .cover__subtitle {
     top: 59.218%;
-    width: 360px;
   }
 }
 @media screen and (min-width: 1280px) {
   .cover__subtitle {
     top: 57.972%;
-    width: 360px;
   }
 }
